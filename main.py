@@ -56,7 +56,7 @@ async def weathercity_cmd(message: types.Message):
 
 @dp.message_handler(commands=["weather"])
 async def weather_cmd(message: types.Message):
-    user_id = message.from_user.id
+    user_id = message.from_user.id #
     q.execute("SELECT city FROM users WHERE user_id = ?", (user_id,))
     result = q.fetchone()
     city = result[0] if result else None
