@@ -8,12 +8,84 @@
 
 # Weather-Bot
 
-Bot for viewing the weather in the specified city.
+## Описание
 
-## Btw
+Weather-Bot - это чат-бот, предназначенный для предоставления текущей погодной информации. Бот использует API погоды для получения данных о погоде и может предоставлять пользователю актуальные сведения о температуре, влажности, скорости ветра и других метеорологических параметрах.
 
-If you use the repository for your own purposes, leave the nickname of the real developer. Respect other people's work and skills. Also, keep the initial license.
+## Установка
 
-## License
+1. Клонировать репозиторий:
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
+```bash
+git clone https://github.com/yourusername/Weather-Bot.git
+cd Weather-Bot
+```
+
+2. Установить зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Получить API ключ для погодного API (OpenWeatherMap) и добавить его в файл (`main.py`):
+
+```python
+# main.py
+# найдёте в коде, поле api_key
+
+api_key = "your_api_key_here"
+```
+
+4. Вставить токен своего бота в (`config.py`):
+
+```python
+# config.py
+token = "bot token"
+```
+
+## Использование
+
+1. Запустить бот:
+
+```bash
+python main.py
+```
+
+2. Подключиться к чату с ботом.
+
+3. Введите команду чтобы добавить свой город:
+
+```
+/weather_sity Moscow 
+(можно вводит и на русском)
+```
+
+А потом:
+
+```
+/weather
+```
+
+Бот ответит текущей погодой в Москве.
+
+## Команды
+
+- `/weather_sity <город>`: Сохраняем свой город.
+- `/weather`: Получить текущую погоду для указанного города.
+
+## Технологии
+
+- Python
+- [Погодное API](http://api.openweathermap.org)
+
+## Лицензия
+
+Этот проект лицензируется по лицензии GNU General Public License v3.0 - подробности см. в файле `LICENSE`.
+
+## Автор
+
+[Kamoliddin Tukhtaboev](https://t.me/kamolgks)
+
+## Вклад
+
+Если вы хотите внести свой вклад в развитие проекта, пожалуйста, создайте запрос на объединение изменений.
