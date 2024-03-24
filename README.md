@@ -1,91 +1,92 @@
-<!-- ![anime-road](https://github.com/kamolgks/Weather-Bot/assets/101630621/3436e127-f07e-4fe7-88e9-742e233257c0) -->
-
 <p align="center">
-  <a href="https://t.me/weatherv_robot">
-    <img src="https://te.legra.ph/file/c47319f50a8a426e1a415.jpg" alt="Photo">
-  </a>
+   <a href="https://t.me/weatherv_robot">
+     <img src="https://te.legra.ph/file/c47319f50a8a426e1a415.jpg" alt="bot">
+   </a>
 </p>
 
-# Weather-Bot
+# WeatherBot
 
-## Описание
+## Description
 
-Weather-Bot - это чат-бот, предназначенный для предоставления текущей погодной информации. Бот использует API погоды для получения данных о погоде и может предоставлять пользователю актуальные сведения о температуре, влажности, скорости ветра и других метеорологических параметрах.
+Weather-Bot is a chatbot designed to provide current weather information. The bot uses the weather API to retrieve weather data and can provide the user with up-to-date information about temperature, humidity, wind speed and other meteorological parameters.
 
-## Установка
+## Installation
 
-1. Клонировать репозиторий:
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Weather-Bot.git
-cd Weather-Bot
+git clone https://github.com/kamolgks/Weather-Bot.git && cd Weather-Bot
 ```
 
-2. Установить зависимости:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Получить API ключ для погодного API (OpenWeatherMap) и добавить его в файл (`main.py`):
+3. Get the API key for the weather API (OpenWeatherMap) and add it to the file (`main.py`):
 
 ```python
 # main.py
-# найдёте в коде, поле api_key
+# you will find in the code, the api_key field
 
-api_key = "your_api_key_here"
+api_key = "your_api_key"
 ```
 
-4. Вставить токен своего бота в (`config.py`):
+4. Insert your bot token into (`main.py`):
 
 ```python
-# config.py
-token = "bot token"
+# main.py
+TOKEN = getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
 ```
 
-## Использование
+## Usage
 
-1. Запустить бот:
+1. Launch the bot:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
-2. Подключиться к чату с ботом.
+2. Connect to chat with the bot.
 
-3. Введите команду чтобы добавить свой город:
+3. Enter the command to add your city:
 
 ```
-/weather_sity Moscow 
-(можно вводит и на русском)
+/weather_sity Tashkent
+(can also be entered in Russian)
 ```
 
-А потом:
+<img src="https://i.imgur.com/Aoeu5Pj.jpeg" alt="city">
+
+And then:
 
 ```
 /weather
 ```
 
-Бот ответит текущей погодой в Москве.
+The bot will respond with the current weather in Tashkent.
 
-## Команды
+<img src="https://i.imgur.com/SfXRaA3.jpeg" alt="result">
 
-- `/weather_sity <город>`: Сохраняем свой город.
-- `/weather`: Получить текущую погоду для указанного города.
+## Teams
 
-## Технологии
+- `/weather_sity <city>`: Save your city.
+- `/weather`: Get the current weather for the specified city.
+
+## Technologies
 
 - Python
-- [Погодное API](http://api.openweathermap.org)
+- [Weather API](http://api.openweathermap.org)
 
-## Лицензия
+## License
 
-Этот проект лицензируется по лицензии GNU General Public License v3.0 - подробности см. в файле `LICENSE`.
+This project is licensed under the GNU General Public License v3.0 - see the `LICENSE` file for details.
 
-## Автор
+## Author
 
 [Kamoliddin Tukhtaboev](https://t.me/kamolgks)
 
-## Вклад
+## Contribution
 
-Если вы хотите внести свой вклад в развитие проекта, пожалуйста, создайте запрос на объединение изменений.
+If you would like to contribute to the development of the bot, please create a merge request.
