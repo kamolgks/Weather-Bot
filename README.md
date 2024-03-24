@@ -77,6 +77,7 @@ The bot will respond with the current weather in Tashkent.
 ## Technologies
 
 - Python
+- Aiogram 
 - [Weather API](http://api.openweathermap.org)
 
 ## License
