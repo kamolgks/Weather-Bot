@@ -1,63 +1,63 @@
-<p align="center">
+<!-- <p align="center">
    <a href="https://t.me/weatherv_robot">
-     <img src="https://te.legra.ph/file/c47319f50a8a426e1a415.jpg" alt="bot">
+     <img src="https://te.legra.ph/file/c47319f50a8a426e1a415.jpg" alt="bot_img">
    </a>
-</p>
+</p> -->
+
+[![bot_img](https://te.legra.ph/file/c47319f50a8a426e1a415.jpg)](https://t.me/weatherv_robot)
 
 # WeatherBot
 
 ## Description
 
-Weather-Bot is a chatbot designed to provide current weather information. The bot uses the weather API to retrieve weather data and can provide the user with up-to-date information about temperature, humidity, wind speed and other meteorological parameters.
+***Weather-Bot is a chatbot designed to provide current weather information. The bot uses the weather API to retrieve weather data and can provide the user with up-to-date information about temperature, humidity, wind speed and other meteorological parameters.***
 
 ## Installation
 
 1. Clone the repository:
 
-```bash
+```sh
 git clone https://github.com/kamolgks/Weather-Bot.git && cd Weather-Bot
 ```
 
 2. Install dependencies:
 
-```bash
+```sh
 pip install -r requirements.txt
 ```
 
-3. Get the API key for the weather API (OpenWeatherMap) and add it to the file (`main.py`):
+3. Create a .env file in the root directory of your project and add your weather API ([OpenWeatherMap](http://api.openweathermap.org)) and your bot's token:
 
-```python
-# main.py
-# you will find in the code, the api_key field
-
-api_key = "your_api_key"
 ```
-
-4. Insert your bot token into (`main.py`):
-
-```python
-# main.py
-TOKEN = getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
+API_KEY='YOUR_API_KEY'
+BOT_TOKEN='YOUR_BOT_TOKEN'
 ```
 
 ## Usage
 
 1. Launch the bot:
 
-```bash
-python3 main.py
-```
+- **Linux**
+  - ```python3 main.py```
+
+- **Windows**
+
+  - Launch ***"start.bat"***
 
 2. Connect to chat with the bot.
 
 3. Enter the command to add your city:
 
-```
-/weather_sity Tashkent
-(can also be entered in Russian)
+`/weather_sity `
+
 ```
 
-<img src="https://i.imgur.com/Aoeu5Pj.jpeg" alt="city">
+and send name of your city
+
+Tashkent
+```
+
+<img src="https://i.imgur.com/MQSUFI1.jpeg" alt="city">
 
 And then:
 
@@ -67,17 +67,17 @@ And then:
 
 The bot will respond with the current weather in Tashkent.
 
-<img src="https://i.imgur.com/SfXRaA3.jpeg" alt="result">
+<img src="https://i.imgur.com/KddA1xS.jpeg" alt="result">
 
 ## Teams
 
-- `/weather_sity <city>`: Save your city.
+- `/weather_sity` -> `City`: Save your city.
 - `/weather`: Get the current weather for the specified city.
 
 ## Technologies
 
 - Python
-- Aiogram 
+- Aiogram
 - [Weather API](http://api.openweathermap.org)
 
 ## License
