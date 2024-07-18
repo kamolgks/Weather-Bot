@@ -48,7 +48,7 @@ BOT_TOKEN='YOUR_BOT_TOKEN'
 
 3. Enter the command to add your city:
 
-`/weather_sity `
+`/weather_city `
 
 ```
 
